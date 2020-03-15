@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>Linked dropdowns no Ajax - examples</title>
+    </head>
+    <body>
+        <h1>
+            Linked dropdown with no Ajax
+        </h1>
+        <h3>
+            Parent select linked to child
+        </h3>
+        <div>
+            <label for="parentSelect">Continent</label>
+            <select name="parent_select" id="parentSelect">
+                <option value="africa">Africa</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europe</option>
+                <option value="north-america">North America</option>
+                <option value="south-america">South America</option>
+            </select>
+            <label for="childSelect">Country</label>
+            <select name="child_select" id="childSelect">
+                <option parent-option="africa" value="angola">Angola</option>
+                <option parent-option="africa" value="cameroon">Cameroon</option>
+                <option parent-option="africa" value="nigeria">Nigeria</option>
+                <option parent-option="africa" value="south-africa">South Africa</option>
+                <option parent-option="asia" value="china">China</option>
+                <option parent-option="asia" value="japan">Japan</option>
+                <option parent-option="asia" value="russia">Russia</option>
+                <option parent-option="europe" value="france">France</option>
+                <option parent-option="europe" value="france">Germany</option>
+                <option parent-option="europe" value="spain">Spain</option>
+                <option parent-option="north-america" value="usa">USA</option>
+                <option parent-option="north-america" value="canada">Canada</option>
+            </select>
+        </div>
+        <h3>
+            Child select filled after load
+        </h3>
+        <div>
+            <label for="parentSelectFilled">Country</label>
+            <select name="child_select" id="parentSelectFilled">
+                <option parent-option="africa" value="angola">Angola</option>
+                <option parent-option="africa" value="cameroon">Cameroon</option>
+                <option parent-option="africa" value="nigeria">Nigeria</option>
+                <option parent-option="africa" value="south-africa">South Africa</option>
+                <option parent-option="asia" value="china">China</option>
+                <option parent-option="asia" value="japan">Japan</option>
+                <option parent-option="asia" value="russia">Russia</option>
+                <option parent-option="europe" value="france">France</option>
+                <option parent-option="europe" value="france">Germany</option>
+                <option parent-option="europe" value="spain">Spain</option>
+                <option parent-option="north-america" value="usa">USA</option>
+                <option parent-option="north-america" value="canada">Canada</option>
+            </select>
+            <label for="childSelectFilled">Town</label>
+            <select name="child_select" id="childSelectFilled">
+                <option parent-option="angola" value="luanda">Luanda</option>
+                <option parent-option="angola" value="lubango">Lubango</option>
+                <option parent-option="cameroon" value="yaounde">Yaounde</option>
+                <option parent-option="cameroon" value="douala">Douala</option>
+                <option parent-option="nigeria" value="lagos">Lagos</option>
+                <option parent-option="nigeria" value="abuja">Abuja</option>
+                <option parent-option="china" value="pekin">Pekin</option>
+                <option parent-option="china" value="shanghai">Shanghai</option>
+                <option parent-option="japan" value="tokyo">Tokyo</option>
+                <option parent-option="japan" value="kyoto">Kyoto</option>
+                <option parent-option="russia" value="moscow">Moscou</option>
+                <option parent-option="russia" value="belgorod">Belgorod</option>
+                <option parent-option="france" value="paris">Paris</option>
+                <option parent-option="france" value="nice">Nice</option>
+                <option parent-option="germany" value="berlin">Berlin</option>
+                <option parent-option="germany" value="munich">Munich</option>
+                <option parent-option="spain" value="barcelona">Barcelona</option>
+                <option parent-option="spain" value="madrid">Madrid</option>
+                <option parent-option="usa" value="new-york">New York</option>
+                <option parent-option="usa" value="washington">Washington</option>
+                <option parent-option="canada" value="montreal">Montreal</option>
+                <option parent-option="canada" value="quebec">Quebec</option>
+            </select>
+        </div>
+        <h3>
+            Chained selects
+        </h3>
+        <div>
+            <label for="chainedFirst">Continent</label>
+            <select name="parent_select" id="chainedFirst">
+                <option value="africa">Africa</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europe</option>
+                <option value="north-america">North America</option>
+                <option value="south-america">South America</option>
+            </select>
+            <label for="chainedSecond">Country</label>
+            <select name="child_select" id="chainedSecond">
+                <option parent-option="africa" value="angola">Angola</option>
+                <option parent-option="africa" value="cameroon">Cameroon</option>
+                <option parent-option="africa" value="nigeria">Nigeria</option>
+                <option parent-option="africa" value="south-africa">South Africa</option>
+                <option parent-option="asia" value="china">China</option>
+                <option parent-option="asia" value="japan">Japan</option>
+                <option parent-option="asia" value="russia">Russia</option>
+                <option parent-option="europe" value="france">France</option>
+                <option parent-option="europe" value="germany">Germany</option>
+                <option parent-option="europe" value="spain">Spain</option>
+                <option parent-option="north-america" value="usa">USA</option>
+                <option parent-option="north-america" value="canada">Canada</option>
+            </select>
+            <label for="chainedThird">Town</label>
+            <select name="child_select" id="chainedThird">
+                <option parent-option="angola" value="luanda">Luanda</option>
+                <option parent-option="angola" value="lubango">Lubango</option>
+                <option parent-option="cameroon" value="yaounde">Yaounde</option>
+                <option parent-option="cameroon" value="douala">Douala</option>
+                <option parent-option="nigeria" value="lagos">Lagos</option>
+                <option parent-option="nigeria" value="abuja">Abuja</option>
+                <option parent-option="china" value="pekin">Pekin</option>
+                <option parent-option="china" value="shanghai">Shanghai</option>
+                <option parent-option="japan" value="tokyo">Tokyo</option>
+                <option parent-option="japan" value="kyoto">Kyoto</option>
+                <option parent-option="russia" value="moscow">Moscou</option>
+                <option parent-option="russia" value="belgorod">Belgorod</option>
+                <option parent-option="france" value="paris">Paris</option>
+                <option parent-option="france" value="nice">Nice</option>
+                <option parent-option="germany" value="berlin">Berlin</option>
+                <option parent-option="germany" value="munich">Munich</option>
+                <option parent-option="spain" value="barcelona">Barcelona</option>
+                <option parent-option="spain" value="madrid">Madrid</option>
+                <option parent-option="usa" value="new-york">New York</option>
+                <option parent-option="usa" value="washington">Washington</option>
+                <option parent-option="canada" value="montreal">Montreal</option>
+                <option parent-option="canada" value="quebec">Quebec</option>
+            </select>
+        </div>
+        <script src="jquery.min.js"></script>
+        <script src="../src/select-autopopulate-no-ajax.js"></script>
+        <script>
+            $(document).ready( function(){
+                // Basic
+                $("#parentSelect").autopopulatedselect("#childSelect");
+                // Empty child
+                $("#parentSelectFilled").autopopulatedselect("#childSelectFilled", false);
+                // Chained Select
+                // Notice that the last select is chained to the second before chaining to the first
+                $("#chainedSecond").autopopulatedselect("#chainedThird");
+                $("#chainedFirst").autopopulatedselect("#chainedSecond");
+            });
+        </script>
+    </body>
+</html>

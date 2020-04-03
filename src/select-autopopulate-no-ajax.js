@@ -24,7 +24,9 @@
             });
             // Reverse to keep the same order
             $.each( parentToChildArray, function( key, value ){
-                value.reverse();                 
+                if( value != undefined ) {
+                    value.reverse();                 
+                }
             });
             // Load matching element for the currently selected option
             if( parentToChildArray[ currentElement.val() ] != undefined ){
